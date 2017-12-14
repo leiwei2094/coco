@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * @author Jerry Lee(oldratlee<at>gmail<dot>com)
  */
-@Extension("rubber")
+@Extension(defaultValue = "rubber")
 public interface Wheel {
     void roll(@Adaptive("wheel") Map<String, String> config);
 }

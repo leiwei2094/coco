@@ -26,7 +26,7 @@ import java.util.Map;
  *
  * @author Jerry Lee(oldratlee AT gmail DOT com)
  */
-@Extension("impl1")
+@Extension(defaultValue = "impl1")
 public interface ImplNoDefaultConstructorExt {
     String echo(@Adaptive("key") Map<String, String> config, String s);
 }
