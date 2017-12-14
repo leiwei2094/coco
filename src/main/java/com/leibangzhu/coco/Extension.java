@@ -41,6 +41,6 @@ public @interface Extension {
      *
      * @since 0.1.0
      */
-    String value() default "";
+    String defaultValue() default "";
 
 }

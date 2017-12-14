@@ -26,7 +26,7 @@ import java.util.Map;
  *
  * @author Zava
  */
-@Extension("invalidName]")
+@Extension(defaultValue = "invalidName]")
 public interface InvalidNameExt2 {
     String echo(@Adaptive("key") Map<String, String> config, String s);
 }

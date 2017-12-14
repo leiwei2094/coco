@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * @author Jerry Lee(oldratlee AT gmail DOT com)
  */
-@Extension("impl1")
+@Extension(defaultValue = "impl1")
 public interface ManualAdaptiveClassExt {
     String echo(@Adaptive("key") Map<String, String> config, String s);
 }

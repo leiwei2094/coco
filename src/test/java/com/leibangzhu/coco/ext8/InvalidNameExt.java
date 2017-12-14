@@ -27,7 +27,7 @@ import java.util.Map;
  *
  * @author Jerry Lee(oldratlee AT gmail DOT com)
  */
-@Extension("invalid-name&")
+@Extension(defaultValue = "invalid-name&")
 public interface InvalidNameExt {
     String echo(@Adaptive("key") Map<String, String> config, String s);
 }

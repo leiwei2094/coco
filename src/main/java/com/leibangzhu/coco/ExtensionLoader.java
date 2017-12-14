@@ -341,7 +341,7 @@ public class ExtensionLoader<T> {
         String defaultExt = null;
         final Extension annotation = type.getAnnotation(Extension.class);
         if (annotation != null) {
-            String value = annotation.value();
+            String value = annotation.defaultValue();
             if (value != null && (value = value.trim()).length() > 0) {
                 String[] names = NAME_SEPARATOR.split(value);
                 if (names.length > 1) {

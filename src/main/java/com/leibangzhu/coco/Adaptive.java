@@ -53,7 +53,7 @@ public @interface Adaptive {
      * 缺省是扩展点接口名的点分小写形式。
      * eg. 扩展点接口名<code>com.leibangzhu.coco.FooBizService</code>, 缺省key是<code>String[] {"foo.biz.service"}</code>。
      *
-     * @see Extension#value()
+     * @see Extension#defaultValue()
      * @since 0.1.0
      */
     String[] value() default {};
